@@ -1,0 +1,40 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mmdit-jax-flax"
+version = "0.0.1"
+description = "Multi-modal DiT (Diffusion Transformer) implementation in JAX/Flax"
+authors = [
+    {name = "Your Name", email = "your.email@example.com"},
+]
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "jax>=0.4.0",
+    "flax>=0.8.0",
+    "einops>=0.8.0",
+    "jaxtyping>=0.2.20",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/mmdit-jax-flax"
+Repository = "https://github.com/yourusername/mmdit-jax-flax"
+
+[tool.hatch.build.targets.wheel]
+packages = ["mmdit_jax_flax"]
